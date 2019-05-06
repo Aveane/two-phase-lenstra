@@ -1,5 +1,4 @@
-︠0ce85634-01d7-4362-8ff4-f237b1fd2241s︠
-def EC_Gen(G,N):
+︠def EC_Gen(G,N):
     flag = True
     while (flag):
         x = G.random_element()
@@ -95,7 +94,6 @@ else:
     print "Birthday paradox:"
     print N,"is divisible by",factor
     print "Result is", N/int(factor)
-︡2697ad7f-7e25-4724-869d-ba45bead9942︡{"stdout":"Lenstra is dead\nBirthday paradox:"}︡{"stdout":"\n971230541 is divisible by 0\nResult is"}︡{"stderr":"Error in lines 77-86\n"}︡{"stderr":"Traceback (most recent call last):\n  File \"/cocalc/lib/python2.7/site-packages/smc_sagews/sage_server.py\", line 1188, in execute\n    flags=compile_flags) in namespace, locals\n  File \"\", line 10, in <module>\n  File \"sage/rings/integer.pyx\", line 1955, in sage.rings.integer.Integer.__div__ (build/cythonized/sage/rings/integer.c:13460)\n    return coercion_model.bin_op(left, right, operator.truediv)\n  File \"sage/structure/coerce.pyx\", line 1166, in sage.structure.coerce.CoercionModel.bin_op (build/cythonized/sage/structure/coerce.c:10074)\n    return PyObject_CallObject(op, xy)\n  File \"sage/structure/element.pyx\", line 1718, in sage.structure.element.Element.__truediv__ (build/cythonized/sage/structure/element.c:12784)\n    return (<Element>left)._div_(right)\n  File \"sage/rings/integer.pyx\", line 1969, in sage.rings.integer.Integer._div_ (build/cythonized/sage/rings/integer.c:13577)\n    raise ZeroDivisionError(\"rational division by zero\")\nZeroDivisionError: rational division by zero\n"}︡{"done":true}︡
 
 
 
