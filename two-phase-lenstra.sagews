@@ -60,7 +60,6 @@ def f(Qs):
         return True,-1,Q
     return False,gcd(2*Qs[length-1][1],N),Q
 
-#TODO check groups
 def birthday(Q,G,N):
     Qs = []
     Qs.append(Q)
@@ -85,7 +84,7 @@ def birthday(Q,G,N):
 
 N = 105019*105341*105607*105943
 G = Integers(N)
-m = m1 = 30
+m = m1 = 484
 
 P,E = EC_Gen(G,N)
 factor,Q = Lenstra(E,P,m,m1)
