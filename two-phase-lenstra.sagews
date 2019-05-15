@@ -74,7 +74,7 @@ def birthday(Q,G,N):
                 bdayFlag = False
         else:
             return nwd
-    d = 0
+    d = 1
     for i in range (l):
         for j in range (i+1,l+1):
             d = d * (Qs[i][1] - Qs[j][1])
